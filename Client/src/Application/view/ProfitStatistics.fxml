@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.controllers.ProfitStatisticsController">
+   <children>
+      <BarChart fx:id="saleBarChart" layoutX="35.0" prefHeight="500.0" prefWidth="518.0" title="Доход в месяц" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" tickLabelRotation="270.0" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <GridPane layoutX="596.0" layoutY="14.0" prefHeight="138.0" prefWidth="290.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Текущий доход за год:" />
+            <Label text="Продано товаров:" GridPane.rowIndex="1" />
+            <Label fx:id="profitPerYearLabel" text="Label" GridPane.columnIndex="1" />
+            <Label fx:id="soldField" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Продано в рассрочку:" GridPane.rowIndex="2" />
+            <Label fx:id="rassrochkaField" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Продано без рассрочки:" GridPane.rowIndex="3" />
+            <Label fx:id="fullPayLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <BarChart fx:id="countBarChart" layoutX="518.0" layoutY="221.0" prefHeight="279.0" prefWidth="382.0" title="Количество товаров проданных за месяц">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" tickLabelRotation="270.0" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

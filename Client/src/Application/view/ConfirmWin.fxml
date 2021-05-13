@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane cache="true" prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.controllers.ConfirmController">
+   <children>
+      <Button layoutX="217.0" layoutY="160.0" mnemonicParsing="false" onAction="#HandleYes" prefWidth="70.0" text="Да" textFill="#e81a1a" underline="true" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="140.0">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="307.0" layoutY="160.0" mnemonicParsing="false" onAction="#HandleNo" prefWidth="70.0" text="Нет" textFill="#e11515" underline="true" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="140.0">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Text fill="#2f2c2c" layoutX="167.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вы действительно хотите удалить запись?" textAlignment="RIGHT" wrappingWidth="218.93670654296875" AnchorPane.bottomAnchor="64.541015625" AnchorPane.leftAnchor="66.93670654296875" AnchorPane.rightAnchor="14.06329345703125" AnchorPane.topAnchor="67.576171875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

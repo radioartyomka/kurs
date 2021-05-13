@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.controllers.ProductDostavkaOverviewController">
+   <padding>
+      <Insets bottom="100.0" left="550.0" right="150.0" top="400.0" />
+   </padding>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="-550.0" AnchorPane.rightAnchor="-150.0" AnchorPane.topAnchor="-400.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#addDostavka" text="Добавить" textFill="#eb1717">
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#ChangeDostavka" text="Изменить" textFill="#bc1212">
+                     <HBox.margin>
+                        <Insets left="40.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#DeleteDostavka" text="Удалить" textFill="#e81919">
+                     <HBox.margin>
+                        <Insets left="40.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label text="Поиск" textFill="#141414" AnchorPane.bottomAnchor="38.0" AnchorPane.rightAnchor="665.0" AnchorPane.topAnchor="30.0" />
+                  <TextField AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="30.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="-400.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="idDostavkaColumn" prefWidth="75.0" text="ID" />
+                      <TableColumn fx:id="avtoColumn" prefWidth="115.0" text="Автомобиль" />
+                        <TableColumn fx:id="numberAvtoColumn" prefWidth="100.0" text="Номера Авто" />
+                        <TableColumn fx:id="kolColumn" prefWidth="100.0" text="Кол-во Товара" />
+                        <TableColumn fx:id="typeColumn" prefWidth="125.0" text="Тип Товара" />
+                        <TableColumn fx:id="priceColumn" prefWidth="75.0" text="Стоимость" />
+                        <TableColumn fx:id="dateColumn" prefWidth="100.0" text="Дата Прибытия" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.controllers.AuthorizationController">
+   <children>
+      <TextField fx:id="logField" layoutX="115.0" layoutY="45.0" promptText="Логин" />
+      <PasswordField fx:id="passField" layoutX="115.0" layoutY="106.0" promptText="Пароль" />
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="37.0" layoutY="33.0">
+         <image>
+            <Image url="@../images/log.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="37.0" layoutY="94.0">
+         <image>
+            <Image url="@../images/pass.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="124.0" layoutY="184.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleInput" prefHeight="25.0" prefWidth="250.0" text="Вход" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+      <Label fx:id="errorInput" layoutX="37.0" layoutY="159.0" text="Label" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>
